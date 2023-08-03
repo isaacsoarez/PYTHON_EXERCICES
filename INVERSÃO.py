@@ -1,0 +1,5 @@
+num1= int(input('Digite o valor A:'))
+num2= int(input('Digite o valor B:'))
+print('Invertendo os valores, o resultado é:')
+print('O valor A=',num2)
+print('O valor B=',num1)
