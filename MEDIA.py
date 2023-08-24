@@ -1,10 +1,14 @@
-Nome= (input('digite seu nome e sobrenome:'))
-Idade= (input('digite sua idade:'))
-RA= (input('digite seu RA:'))
-nota1= float (input('digite sua primeira nota:'))
-nota2= float (input('digite sua segunda nota:'))
-nota3= float (input('digite sua terceira nota:'))
-nota4= float (input('digite sua quarta nota:'))
-media= (nota1+nota2+nota3+nota4)/4
-print(Nome, Idade, RA)
-print('sua média final é de:', media)
+soma = 0
+contador = 0
+
+numero = float(input("Digite as notas que são utilizadas para média(Após adicione qualquer valor negativo para fazer o calculo):"))
+
+while numero >= 0:
+    soma += numero
+    contador += 1
+    numero = float(input("Digite as notas que são utilizadas para média(Após adicione qualquer valor negativo para fazer o calculo):"))
+if contador > 0:
+    media = soma / contador
+    print(f"A média dos números inseridos é: {media:.2f}")
+else:
+    print("Nenhum número válido foi inserido.")
